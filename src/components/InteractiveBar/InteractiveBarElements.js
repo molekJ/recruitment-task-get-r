@@ -68,4 +68,33 @@ export const ChooseFoodH3 = styled.h3`
 export const ChooseFoodIcons = styled.section`
   display: flex;
 `;
-export const FoodIcon = styled.div``;
+export const FoodIcon = styled.div`
+  font-size: 24px;
+  margin-left: 14px;
+  margin-top: 13px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:nth-child(1) {
+    margin-left: 0;
+    color: #39a160;
+  }
+
+  &:nth-child(2) {
+    color: #f6921e;
+  }
+  &:nth-child(3) {
+    color: #bb433f;
+  }
+  &:nth-child(4) {
+    color: #d3d3d3;
+    transform: scaleX(-1);
+  }
+
+  &:nth-child(5) {
+    margin-right: 2px;
+    color: #a46536;
+  }
+`;

@@ -12,6 +12,13 @@ import {
   ChooseFoodIcons,
   FoodIcon,
 } from "./InteractiveBarElements";
+import {
+  GiCheeseWedge,
+  GiSteak,
+  GiChickenOven,
+  GiFruitBowl,
+} from "react-icons/gi";
+import { IoFish } from "react-icons/io5";
 
 export default function InteractivBar() {
   return (
@@ -28,11 +35,21 @@ export default function InteractivBar() {
       <ChooseFoodContainer>
         <ChooseFoodH3>Select Your protein options</ChooseFoodH3>
         <ChooseFoodIcons>
-          <FoodIcon>1</FoodIcon>
-          <FoodIcon>2</FoodIcon>
-          <FoodIcon>3</FoodIcon>
-          <FoodIcon>4</FoodIcon>
-          <FoodIcon>5</FoodIcon>
+          <FoodIcon>
+            <GiFruitBowl />
+          </FoodIcon>
+          <FoodIcon>
+            <GiCheeseWedge />
+          </FoodIcon>
+          <FoodIcon>
+            <GiSteak />
+          </FoodIcon>
+          <FoodIcon>
+            <IoFish />
+          </FoodIcon>
+          <FoodIcon>
+            <GiChickenOven />
+          </FoodIcon>
         </ChooseFoodIcons>
       </ChooseFoodContainer>
     </ContainerBar>
