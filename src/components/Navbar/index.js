@@ -1,4 +1,5 @@
 import React from "react";
+// import profilePic from "../../images/unsplash-woman.jpg";
 import {
   NavContainer,
   NavRoute,
@@ -7,6 +8,7 @@ import {
   NavProfileImg,
   NavProfileMenu,
 } from "./NavbarElements";
+import { userInfo } from "../../Data/profile";
 
 export default function Navbar() {
   return (
@@ -18,8 +20,12 @@ export default function Navbar() {
           <NavRouteElement>Challenge</NavRouteElement>
         </NavRoute>
         <NavProfile>
-          <NavProfileImg>Picture</NavProfileImg>
-          <NavProfileMenu>Menu</NavProfileMenu>
+          <NavProfileImg src={userInfo.img} />
+          <NavProfileMenu>
+            <option>
+              {userInfo.name} {userInfo.surname}
+            </option>
+          </NavProfileMenu>
         </NavProfile>
       </NavContainer>
     </>
