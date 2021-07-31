@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import InteractivBar from "./components/InteractiveBar";
 import { GlobalStyle } from "./GlobalStyles";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <GlobalStyle />
       <Navbar />
+      <InteractivBar></InteractivBar>
     </>
   );
 }
