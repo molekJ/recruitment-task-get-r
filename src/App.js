@@ -1,5 +1,11 @@
+import Navbar from "./Navbar";
+
 function App() {
-  return <>SiemkA</>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 }
 
 export default App;
