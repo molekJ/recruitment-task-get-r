@@ -1,5 +1,4 @@
 import React from "react";
-// import profilePic from "../../images/unsplash-woman.jpg";
 import {
   NavContainer,
   NavRoute,
@@ -20,7 +19,7 @@ export default function Navbar() {
           <NavRouteElement>Challenge</NavRouteElement>
         </NavRoute>
         <NavProfile>
-          <NavProfileImg src={userInfo.img} />
+          <NavProfileImg src={userInfo.img} alt={userInfo.alt} />
           <NavProfileMenu>
             <option>
               {userInfo.name} {userInfo.surname}
