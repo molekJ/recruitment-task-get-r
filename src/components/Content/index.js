@@ -1,7 +1,16 @@
 import React from "react";
 import ContainerDay from "./ContainerDay";
-import { ContainerContent, ContainerHours } from "./ContentElements";
+import {
+  ContainerContent,
+  ContainerHours,
+  ContainerFreeDay,
+  GuiltFreeInfo,
+  PrintIcon,
+  DayH3,
+} from "./ContentElements";
 import { MdPlayArrow } from "react-icons/md";
+import { AiFillPrinter } from "react-icons/ai";
+import { MdTagFaces } from "react-icons/md";
 
 export default function Content() {
   return (
@@ -38,7 +47,19 @@ export default function Content() {
         <ContainerDay />
         <ContainerDay />
         <ContainerDay />
-        <ContainerDay />
+        <ContainerFreeDay>
+          <DayH3>day 65</DayH3>
+          <GuiltFreeInfo>
+            <MdTagFaces />
+            <p>guilt-free day</p>
+          </GuiltFreeInfo>
+          <PrintIcon>
+            <div>
+              <AiFillPrinter />
+            </div>
+            <p>print</p>
+          </PrintIcon>
+        </ContainerFreeDay>
       </ContainerContent>
     </>
   );

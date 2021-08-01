@@ -3,14 +3,9 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: grid;
   grid-template-rows: 50px repeat(5, 92px) repeat(2, 35px);
-  /* border-left: 2px solid var(--darkgrey5); */
 
   > div {
     border-top: 2px solid var(--grey2);
-  }
-
-  :nth-of-type(2) {
-    /* border-left: none; */
   }
 `;
 
@@ -46,7 +41,7 @@ export const WokroutIcon = styled.div`
   background: var(--darkgrey2);
   border-right: 2px solid var(--grey2);
 
-  :hover {
+  > :hover {
     cursor: pointer;
   }
 `;
