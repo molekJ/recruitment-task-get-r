@@ -72,9 +72,11 @@ export const FoodIcon = styled.div`
   font-size: 24px;
   margin-left: 14px;
   margin-top: 13px;
+  transition: 0.5s all;
 
   &:hover {
     cursor: pointer;
+    transform: scale(1.15);
   }
 
   &:nth-child(1) {
@@ -90,7 +92,7 @@ export const FoodIcon = styled.div`
   }
   &:nth-child(4) {
     color: #d3d3d3;
-    transform: scaleX(-1);
+    /* transform: scaleX(-1); */
   }
 
   &:nth-child(5) {
