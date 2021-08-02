@@ -73,6 +73,7 @@ export const FoodIcon = styled.div`
   margin-left: 14px;
   margin-top: 13px;
   transition: 0.5s all;
+  position: relative;
 
   &:hover {
     cursor: pointer;
@@ -99,4 +100,14 @@ export const FoodIcon = styled.div`
     margin-right: 2px;
     color: #a46536;
   }
+`;
+
+export const Strikethrough = styled.div`
+  width: 32px;
+  height: 3px;
+  background: var(--grey2);
+  position: absolute;
+  transform: rotate(-45deg);
+  top: 12px;
+  right: -4px;
 `;

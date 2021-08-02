@@ -8,13 +8,14 @@ import {
   CheckIcon,
 } from "./DayElements";
 import { CgGym } from "react-icons/cg";
+import diets from "../../Data/diets";
 
 export default function ContainerDay() {
   return (
     <Container>
       <DayH3>day 65</DayH3>
       <MealContainer>
-        <p>Jakis posilek</p>
+        <p></p>
         <img />
         <CheckIcon />
       </MealContainer>

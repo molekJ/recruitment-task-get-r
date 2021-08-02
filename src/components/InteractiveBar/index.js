@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   ContainerBar,
   WeekProgressContainer,
@@ -11,6 +11,7 @@ import {
   ChooseFoodH3,
   ChooseFoodIcons,
   FoodIcon,
+  Strikethrough,
 } from "./InteractiveBarElements";
 import {
   GiCheeseWedge,
@@ -21,6 +22,11 @@ import {
 import { IoFish } from "react-icons/io5";
 
 export default function InteractivBar() {
+  const [isCheck, setIsCheck] = useState(false);
+
+  const toggleCheck = () => {
+    return setIsCheck(!isCheck);
+  };
   return (
     <ContainerBar>
       <WeekProgressContainer>
@@ -35,8 +41,9 @@ export default function InteractivBar() {
       <ChooseFoodContainer>
         <ChooseFoodH3>Select Your protein options</ChooseFoodH3>
         <ChooseFoodIcons>
-          <FoodIcon>
+          <FoodIcon isCheck={isCheck} onClick={toggleCheck}>
             <GiFruitBowl />
+            {isCheck && <Strikethrough />}
           </FoodIcon>
           <FoodIcon>
             <GiCheeseWedge />
