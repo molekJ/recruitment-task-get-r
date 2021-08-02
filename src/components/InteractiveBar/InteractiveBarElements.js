@@ -105,6 +105,8 @@ export const FoodIcon = styled.div`
 export const Strikethrough = styled.div`
   width: 32px;
   height: 3px;
+  border-top: 1px solid white;
+  border-radius: 3px;
   background: var(--grey2);
   position: absolute;
   transform: rotate(-45deg);
