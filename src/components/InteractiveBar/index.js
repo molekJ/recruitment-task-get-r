@@ -21,12 +21,23 @@ import {
 } from "react-icons/gi";
 import { IoFish } from "react-icons/io5";
 
-export default function InteractivBar() {
+export default function InteractivBar({ week, setWeek }) {
   const [isCheck, setIsCheck] = useState(false);
 
   const toggleCheck = () => {
     return setIsCheck(!isCheck);
   };
+
+  const handlePrevWeek = () => {
+    if (week === 1) {
+      return;
+    }
+    return setWeek(week - 1);
+  };
+  const handleNextWeek = () => {
+    return setWeek(week + 1);
+  };
+
   return (
     <ContainerBar>
       <WeekProgressContainer>
@@ -34,9 +45,9 @@ export default function InteractivBar() {
         <WeekProgressBar></WeekProgressBar>
       </WeekProgressContainer>
       <WeekSlider>
-        <SliderBtn>{"<"}</SliderBtn>
-        <SliderH2>Week 7</SliderH2>
-        <SliderBtn>{">"}</SliderBtn>
+        <SliderBtn onClick={handlePrevWeek}>{"<"}</SliderBtn>
+        <SliderH2>Week {week}</SliderH2>
+        <SliderBtn onClick={handleNextWeek}>{">"}</SliderBtn>
       </WeekSlider>
       <ChooseFoodContainer>
         <ChooseFoodH3>Select Your protein options</ChooseFoodH3>
