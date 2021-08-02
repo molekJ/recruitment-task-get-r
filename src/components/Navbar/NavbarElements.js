@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const NavContainer = styled.div`
   background: var(--lightgrey);
-  /* background: red; */
   width: 978px;
   height: 80px;
   display: flex;
@@ -24,20 +23,31 @@ export const NavRoute = styled.ul`
 
 export const NavRouteElement = styled.li`
   margin-left: 32px;
-  border-bottom: 1px solid transparent;
+  position: relative;
+  letter-spacing: 1px;
   transition: 0.2s ease-out;
+  display: flex;
+  justify-content: center;
+
   &:hover {
     color: #ff801a;
-    border-bottom: 1px solid #ff801a;
     cursor: pointer;
     transition: 0.2s ease-out;
     &::after {
-      display: block;
-      position: absolute;
-      height: 1px;
-      width: 20px;
-      background: orange;
+      opacity: 1;
     }
+  }
+
+  &:after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 25px;
+    background: var(--lightorange);
+    top: 19px;
+    opacity: 0;
+    transition: 0.2s ease-out;
   }
 `;
 
