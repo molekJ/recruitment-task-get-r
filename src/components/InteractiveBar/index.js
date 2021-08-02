@@ -35,6 +35,9 @@ export default function InteractivBar({ week, setWeek }) {
     return setWeek(week - 1);
   };
   const handleNextWeek = () => {
+    if (week === 12) {
+      return;
+    }
     return setWeek(week + 1);
   };
 
@@ -45,9 +48,35 @@ export default function InteractivBar({ week, setWeek }) {
         <WeekProgressBar></WeekProgressBar>
       </WeekProgressContainer>
       <WeekSlider>
-        <SliderBtn onClick={handlePrevWeek}>{"<"}</SliderBtn>
+        {week === 1 ? (
+          <SliderBtn
+            style={{
+              color: "transparent",
+              background: "transparent",
+              cursor: "auto",
+            }}
+            onClick={handlePrevWeek}
+          >
+            {"<"}
+          </SliderBtn>
+        ) : (
+          <SliderBtn onClick={handlePrevWeek}>{"<"}</SliderBtn>
+        )}
         <SliderH2>Week {week}</SliderH2>
-        <SliderBtn onClick={handleNextWeek}>{">"}</SliderBtn>
+        {week === 12 ? (
+          <SliderBtn
+            style={{
+              color: "transparent",
+              background: "transparent",
+              cursor: "auto",
+            }}
+            onClick={handleNextWeek}
+          >
+            {">"}
+          </SliderBtn>
+        ) : (
+          <SliderBtn onClick={handleNextWeek}>{">"}</SliderBtn>
+        )}
       </WeekSlider>
       <ChooseFoodContainer>
         <ChooseFoodH3>Select Your protein options</ChooseFoodH3>
