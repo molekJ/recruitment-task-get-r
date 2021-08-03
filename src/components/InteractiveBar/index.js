@@ -22,9 +22,13 @@ import {
 import { IoFish } from "react-icons/io5";
 
 export default function InteractivBar({ week, setWeek }) {
-  const [isCheck, setIsCheck] = useState(false);
+  const [isCheckVege, setIsCheckVege] = useState(false);
+  const [isCheckCheese, setIsCkeckCheese] = useState(false);
+  const [isCheckBeef, setIsCkeckBeef] = useState(false);
+  const [isCheckFish, setIsCkeckFish] = useState(false);
+  const [isCheckChicken, setIsCkeckChicken] = useState(false);
 
-  const toggleCheck = () => {
+  const toggleCheck = (isCheck, setIsCheck) => {
     return setIsCheck(!isCheck);
   };
 
@@ -67,6 +71,7 @@ export default function InteractivBar({ week, setWeek }) {
           <SliderBtn
             style={{
               color: "transparent",
+
               background: "transparent",
               cursor: "auto",
             }}
@@ -81,21 +86,45 @@ export default function InteractivBar({ week, setWeek }) {
       <ChooseFoodContainer>
         <ChooseFoodH3>Select Your protein options</ChooseFoodH3>
         <ChooseFoodIcons>
-          <FoodIcon isCheck={isCheck} onClick={toggleCheck}>
+          <FoodIcon
+            onClick={() => {
+              toggleCheck(isCheckVege, setIsCheckVege);
+            }}
+          >
             <GiFruitBowl />
-            {isCheck && <Strikethrough />}
+            {isCheckVege && <Strikethrough />}
           </FoodIcon>
-          <FoodIcon>
+          <FoodIcon
+            onClick={() => {
+              toggleCheck(isCheckCheese, setIsCkeckCheese);
+            }}
+          >
             <GiCheeseWedge />
+            {isCheckCheese && <Strikethrough />}
           </FoodIcon>
-          <FoodIcon>
+          <FoodIcon
+            onClick={() => {
+              toggleCheck(isCheckBeef, setIsCkeckBeef);
+            }}
+          >
             <GiSteak />
+            {isCheckBeef && <Strikethrough />}
           </FoodIcon>
-          <FoodIcon>
+          <FoodIcon
+            onClick={() => {
+              toggleCheck(isCheckFish, setIsCkeckFish);
+            }}
+          >
             <IoFish />
+            {isCheckFish && <Strikethrough />}
           </FoodIcon>
-          <FoodIcon>
+          <FoodIcon
+            onClick={() => {
+              toggleCheck(isCheckChicken, setIsCkeckChicken);
+            }}
+          >
             <GiChickenOven />
+            {isCheckChicken && <Strikethrough />}
           </FoodIcon>
         </ChooseFoodIcons>
       </ChooseFoodContainer>
