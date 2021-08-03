@@ -3,9 +3,20 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: grid;
   grid-template-rows: 50px repeat(5, 92px) repeat(2, 35px);
-
+  transition: 0.3s ease-in-out;
   > div {
     border-top: 2px solid var(--grey2);
+  }
+
+  :hover {
+    z-index: 999;
+    outline: 2px solid var(--orange);
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.015);
+    h3 {
+      color: var(--orange);
+    }
   }
 `;
 

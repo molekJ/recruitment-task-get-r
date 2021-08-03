@@ -73,6 +73,7 @@ export const FoodIcon = styled.div`
   transition: 0.5s all;
   position: relative;
   color: var(--lightgreen);
+
   &:hover {
     cursor: pointer;
     transform: scale(1.15);
