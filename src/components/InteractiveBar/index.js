@@ -3,7 +3,6 @@ import {
   ContainerBar,
   WeekProgressContainer,
   WeekProgressH3,
-  WeekProgressBar,
   WeekSlider,
   SliderBtn,
   SliderH2,
@@ -20,6 +19,7 @@ import {
   GiFruitBowl,
 } from "react-icons/gi";
 import { IoFish } from "react-icons/io5";
+import WeekProgressBar from "./WeekProgressBar";
 
 export default function InteractivBar({ week, setWeek }) {
   const [isCheckVege, setIsCheckVege] = useState(false);

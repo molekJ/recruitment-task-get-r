@@ -11,7 +11,8 @@ export const ContainerBar = styled.div`
 
 export const WeekProgressContainer = styled.div`
   height: 100%;
-  /* border: 1px solid black; */
+  margin-left: 5px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,11 +23,7 @@ export const WeekProgressH3 = styled.h3`
   color: var(--darkgrey3);
   text-transform: uppercase;
 `;
-export const WeekProgressBar = styled.div`
-  height: 30px;
-  width: 236px;
-  background: red;
-`;
+
 export const WeekSlider = styled.div`
   height: 100%;
   /* border: 1px solid black; */
