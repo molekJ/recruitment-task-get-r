@@ -90,6 +90,7 @@ export default function InteractivBar({ week, setWeek }) {
             onClick={() => {
               toggleCheck(isCheckVege, setIsCheckVege);
             }}
+            style={{ color: isCheckVege && "var(--grey2)" }}
           >
             <GiFruitBowl />
             {isCheckVege && <Strikethrough />}
@@ -98,6 +99,7 @@ export default function InteractivBar({ week, setWeek }) {
             onClick={() => {
               toggleCheck(isCheckCheese, setIsCkeckCheese);
             }}
+            style={{ color: isCheckCheese && "var(--grey2)" }}
           >
             <GiCheeseWedge />
             {isCheckCheese && <Strikethrough />}
@@ -106,6 +108,7 @@ export default function InteractivBar({ week, setWeek }) {
             onClick={() => {
               toggleCheck(isCheckBeef, setIsCkeckBeef);
             }}
+            style={{ color: isCheckBeef && "var(--grey2)" }}
           >
             <GiSteak />
             {isCheckBeef && <Strikethrough />}
@@ -114,6 +117,7 @@ export default function InteractivBar({ week, setWeek }) {
             onClick={() => {
               toggleCheck(isCheckFish, setIsCkeckFish);
             }}
+            style={{ color: isCheckFish && "var(--grey2)" }}
           >
             <IoFish />
             {isCheckFish && <Strikethrough />}
@@ -122,6 +126,7 @@ export default function InteractivBar({ week, setWeek }) {
             onClick={() => {
               toggleCheck(isCheckChicken, setIsCkeckChicken);
             }}
+            style={{ color: isCheckChicken && "var(--grey2)" }}
           >
             <GiChickenOven />
             {isCheckChicken && <Strikethrough />}

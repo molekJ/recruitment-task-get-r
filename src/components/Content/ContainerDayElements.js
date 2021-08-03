@@ -61,5 +61,6 @@ export const CheckIcon = styled.div``;
 export const PictureFood = styled.img`
   display: block;
   height: 54px;
+  opacity: 50%;
   /* width: 54px; */
 `;

@@ -72,7 +72,7 @@ export const FoodIcon = styled.div`
   margin-top: 13px;
   transition: 0.5s all;
   position: relative;
-
+  color: var(--lightgreen);
   &:hover {
     cursor: pointer;
     transform: scale(1.15);
@@ -80,23 +80,10 @@ export const FoodIcon = styled.div`
 
   &:nth-child(1) {
     margin-left: 0;
-    color: #39a160;
-  }
-
-  &:nth-child(2) {
-    color: #f6921e;
-  }
-  &:nth-child(3) {
-    color: #bb433f;
-  }
-  &:nth-child(4) {
-    color: #d3d3d3;
-    /* transform: scaleX(-1); */
   }
 
   &:nth-child(5) {
     margin-right: 2px;
-    color: #a46536;
   }
 `;
 
