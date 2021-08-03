@@ -42,22 +42,25 @@ export default function Content() {
             </span>
           </p>
         </ContainerHours>
-        {diets.map((day, index) => (
-          <ContainerDay key={index} mealInfo={day} />
-        ))}
-        <ContainerFreeDay>
-          <DayH3>day 65</DayH3>
-          <GuiltFreeInfo>
-            <MdTagFaces />
-            <p>guilt-free day</p>
-          </GuiltFreeInfo>
-          <PrintIcon>
-            <div>
-              <AiFillPrinter />
-            </div>
-            <p>print</p>
-          </PrintIcon>
-        </ContainerFreeDay>
+        {diets.map((day, index) =>
+          day.length === 0 ? (
+            <ContainerFreeDay>
+              <DayH3>day {index + 1}</DayH3>
+              <GuiltFreeInfo>
+                <MdTagFaces />
+                <p>guilt-free day</p>
+              </GuiltFreeInfo>
+              <PrintIcon>
+                <div>
+                  <AiFillPrinter />
+                </div>
+                <p>print</p>
+              </PrintIcon>
+            </ContainerFreeDay>
+          ) : (
+            <ContainerDay key={index} mealInfo={day} indexDay={index} />
+          )
+        )}
       </ContainerContent>
     </>
   );
