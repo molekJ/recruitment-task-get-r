@@ -22,6 +22,7 @@ const Ball = styled.div`
 
 const Container = styled.div`
   display: flex;
+  margin-top: 7px;
 `;
 
 const HorizontalLine = styled.div`

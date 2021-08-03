@@ -22,6 +22,7 @@ export const WeekProgressH3 = styled.h3`
   font-weight: 500;
   color: var(--darkgrey3);
   text-transform: uppercase;
+  margin-bottom: 7px;
 `;
 
 export const WeekSlider = styled.div`
