@@ -11,6 +11,7 @@ import {
 import { MdPlayArrow } from "react-icons/md";
 import { AiFillPrinter } from "react-icons/ai";
 import { MdTagFaces } from "react-icons/md";
+import diets from "../../Data/diets";
 
 export default function Content() {
   return (
@@ -41,12 +42,9 @@ export default function Content() {
             </span>
           </p>
         </ContainerHours>
-        <ContainerDay />
-        <ContainerDay />
-        <ContainerDay />
-        <ContainerDay />
-        <ContainerDay />
-        <ContainerDay />
+        {diets.map((day, index) => (
+          <ContainerDay key={index} mealInfo={day} />
+        ))}
         <ContainerFreeDay>
           <DayH3>day 65</DayH3>
           <GuiltFreeInfo>

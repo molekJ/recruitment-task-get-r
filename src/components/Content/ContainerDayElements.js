@@ -22,6 +22,17 @@ export const MealContainer = styled.div`
   font-size: 10px;
   color: var(--darkgrey4);
   border-right: 2px solid var(--grey2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  p {
+    margin-top: 12px;
+    margin-left: 14px;
+    margin-right: 14px;
+    align-self: flex-start;
+  }
 `;
 export const CarbInfo = styled.p`
   font-size: 8px;
@@ -46,3 +57,9 @@ export const WokroutIcon = styled.div`
   }
 `;
 export const CheckIcon = styled.div``;
+
+export const PictureFood = styled.img`
+  display: block;
+  height: 54px;
+  /* width: 54px; */
+`;
