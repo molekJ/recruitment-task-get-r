@@ -1,6 +1,6 @@
 import milkShake from "../images/milkShake1.png";
 
-export default [
+export const Diet = [
   [
     { meal: "Bod-e Shake", img: milkShake },
     { meal: "Hamm and Swiss Roll Ups" },
