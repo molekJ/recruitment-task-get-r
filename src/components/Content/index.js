@@ -36,7 +36,7 @@ export default function Content() {
           </p>
           <p></p>
           <p>
-            Wokrout{" "}
+            Workout{" "}
             <span>
               <MdPlayArrow />
             </span>

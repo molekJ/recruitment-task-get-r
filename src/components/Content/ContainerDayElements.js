@@ -73,7 +73,7 @@ export const CarbInfo = styled.p`
     display: none;
   }
 `;
-export const WokroutIcon = styled.div`
+export const WorkoutIcon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,6 +83,9 @@ export const WokroutIcon = styled.div`
 
   > :hover {
     cursor: pointer;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
   }
 `;
 export const CheckIcon = styled.div``;

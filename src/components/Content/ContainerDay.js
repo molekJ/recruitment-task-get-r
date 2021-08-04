@@ -4,7 +4,7 @@ import {
   DayH3,
   MealContainer,
   CarbInfo,
-  WokroutIcon,
+  WorkoutIcon,
   PictureFood,
 } from "./ContainerDayElements";
 import { CgGym } from "react-icons/cg";
@@ -21,9 +21,9 @@ export default function ContainerDay({ mealInfo, indexDay }) {
       ))}
 
       <CarbInfo> low-carb</CarbInfo>
-      <WokroutIcon>
+      <WorkoutIcon>
         <CgGym />
-      </WokroutIcon>
+      </WorkoutIcon>
     </Container>
   );
 }
