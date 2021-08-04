@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const NavContainer = styled.div`
-  background: var(--lightgrey);
   width: 978px;
   height: 80px;
+  background: var(--lightgrey);
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
 
   @media screen and (max-width: 768px) {
     width: 768px;
@@ -16,14 +16,14 @@ export const NavContainer = styled.div`
 
 export const NavRoute = styled.ul`
   margin-left: 118px;
-  display: flex;
-  align-items: center;
   font-size: 10px;
-  text-transform: uppercase;
   font-weight: bold;
   color: var(--darkgrey);
-  border-left: 1px solid var(--lightgrey2);
+  text-transform: uppercase;
   list-style: none;
+  border-left: 1px solid var(--lightgrey2);
+  display: flex;
+  align-items: center;
 `;
 
 export const NavRouteElement = styled.li`
@@ -44,22 +44,22 @@ export const NavRouteElement = styled.li`
   }
 
   &:after {
-    display: block;
-    position: absolute;
-    content: "";
-    height: 2px;
     width: 25px;
+    height: 2px;
     background: var(--lightorange);
+    transition: 0.2s ease-out;
+    content: "";
     top: 19px;
     opacity: 0;
-    transition: 0.2s ease-out;
+    display: block;
+    position: absolute;
   }
 `;
 
 export const NavProfile = styled.div`
+  margin-right: 1px;
   display: flex;
   align-items: center;
-  margin-right: 1px;
 `;
 
 export const NavProfileImg = styled.img`
@@ -69,7 +69,7 @@ export const NavProfileImg = styled.img`
 
 export const NavProfileMenu = styled.select`
   font-size: 10px;
-  border: none;
-  background: #fff;
   color: var(--darkgrey);
+  background: #fff;
+  border: none;
 `;

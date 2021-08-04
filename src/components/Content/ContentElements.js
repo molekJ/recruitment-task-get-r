@@ -18,9 +18,9 @@ export const ContainerContent = styled.div`
 `;
 
 export const ContainerHours = styled.div`
-  display: grid;
-  background: var(--darkgrey2);
   color: var(--darkgrey4);
+  background: var(--darkgrey2);
+  display: grid;
   grid-template-rows: 50px repeat(5, 92px) repeat(2, 35px);
 
   span {
@@ -28,28 +28,26 @@ export const ContainerHours = styled.div`
   }
 
   span :last-of-type {
-    color: var(--orange);
     font-size: 5px;
+    color: var(--orange);
   }
   p {
+    font-size: 11px;
+    border-top: 2px solid var(--grey2);
+    text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-transform: uppercase;
-    font-size: 11px;
-    border-top: 2px solid var(--grey2);
 
     :nth-child(1) {
       border-top: none;
     }
-
     :nth-child(2) {
       border-top: none;
     }
     :nth-child(7) {
       border-top: none;
     }
-
     :last-child {
       font-size: 8px;
     }
@@ -64,15 +62,15 @@ export const ContainerHours = styled.div`
     div,
     h3,
     p {
-      border: none;
       font-size: 14px;
+      border: none;
     }
     p :last-of-type {
       font-size: 20px;
     }
     span :last-of-type {
-      color: var(--orange);
       font-size: 10px;
+      color: var(--orange);
       margin-bottom: 2px;
     }
   }
@@ -88,13 +86,13 @@ export const ContainerFreeDay = styled.div`
   }
 `;
 export const DayH3 = styled.h3`
-  text-transform: uppercase;
   font-size: 18px;
   color: var(--lightgreen);
+  border-right: 2px solid var(--grey2);
+  text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 2px solid var(--grey2);
 
   @media screen and (max-width: 768px) {
     border: none;
@@ -102,33 +100,33 @@ export const DayH3 = styled.h3`
 `;
 
 export const GuiltFreeInfo = styled.div`
+  max-width: 127px;
+  font-size: 36px;
+  color: var(--grey2);
   border-right: 2px solid var(--grey2);
   border-top: 2px solid var(--grey2);
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-around;
   align-items: center;
-  color: var(--grey2);
-  max-width: 127px;
-  font-size: 36px;
 
   p {
-    text-transform: uppercase;
-    color: var(--darkgrey4);
     font-size: 26px;
-    transform: rotate(-90deg);
-    white-space: nowrap;
-    margin-top: 100px;
     font-weight: 300;
     letter-spacing: 3px;
+    white-space: nowrap;
+    color: var(--darkgrey4);
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    margin-top: 100px;
   }
 
   @media screen and (max-width: 768px) {
-    flex-direction: row;
     max-width: 100%;
-    justify-content: center;
-    padding: 0;
     border: none;
+    padding: 0;
+    flex-direction: row;
+    justify-content: center;
     p {
       transform: rotate(0deg);
       margin: 0;
@@ -137,10 +135,10 @@ export const GuiltFreeInfo = styled.div`
   }
 `;
 export const PrintIcon = styled.div`
-  background: var(--darkgrey2);
   font-size: 27px;
-  text-transform: capitalize;
   color: var(--darkgrey4);
+  text-transform: capitalize;
+  background: var(--darkgrey2);
   display: flex;
   justify-content: center;
   align-items: center;

@@ -4,8 +4,8 @@ import styled from "styled-components";
 const Ball = styled.div`
   width: 10px;
   height: 10px;
-  border-radius: 50%;
   background: var(--grey2);
+  border-radius: 50%;
 
   :nth-of-type(1) {
     background: var(--lightgreen);

@@ -9,9 +9,9 @@ export const Container = styled.div`
   }
 
   :hover {
+    font-weight: bold;
     z-index: 999;
     outline: 2px solid var(--orange);
-    font-weight: bold;
     transition: 0.3s ease-in-out;
     transform: scale(1.015);
     h3 {
@@ -19,12 +19,12 @@ export const Container = styled.div`
     }
   }
   @media screen and (max-width: 768px) {
-    width: 768px;
     height: 100px;
+    width: 768px;
     grid-template-columns: repeat(6, 109px) 114px;
-
     grid-template-rows: 100px;
     border: none;
+
     div,
     img,
     h3,
@@ -35,13 +35,13 @@ export const Container = styled.div`
 `;
 
 export const DayH3 = styled.h3`
-  text-transform: uppercase;
   font-size: 18px;
   color: var(--lightgreen);
+  border-right: 2px solid var(--grey2);
+  text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 2px solid var(--grey2);
 `;
 export const MealContainer = styled.div`
   font-size: 10px;
@@ -63,23 +63,23 @@ export const CarbInfo = styled.p`
   font-size: 8px;
   color: var(--darkgrey4);
   text-transform: uppercase;
+  background: var(--darkgrey2);
+  border-right: 2px solid var(--grey2);
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--darkgrey2);
-  border-right: 2px solid var(--grey2);
 
   @media screen and (max-width: 768px) {
     display: none;
   }
 `;
 export const WorkoutIcon = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 18px;
   background: var(--darkgrey2);
   border-right: 2px solid var(--grey2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   > :hover {
     cursor: pointer;
@@ -91,8 +91,7 @@ export const WorkoutIcon = styled.div`
 export const CheckIcon = styled.div``;
 
 export const PictureFood = styled.img`
-  display: block;
   height: 54px;
   opacity: 50%;
-  /* width: 54px; */
+  display: block;
 `;

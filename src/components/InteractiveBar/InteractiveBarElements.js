@@ -11,9 +11,9 @@ export const ContainerBar = styled.div`
   @media screen and (max-width: 768px) {
     width: 768px;
     height: 100%;
+    padding-top: 10px;
     flex-direction: column;
     align-items: center;
-    padding-top: 10px;
   }
 `;
 
@@ -44,12 +44,12 @@ export const WeekSlider = styled.div`
 export const SliderBtn = styled.button`
   width: 24px;
   height: 42px;
-  border-radius: 5px;
-  background: white;
-  border: none;
   font-size: 30px;
   font-weight: 100;
   color: var(--darkgrey3);
+  background: white;
+  border: none;
+  border-radius: 5px;
   &:hover {
     cursor: pointer;
   }
@@ -59,9 +59,9 @@ export const SliderBtn = styled.button`
   }
 `;
 export const SliderH2 = styled.h2`
-  color: var(--orange);
   font-size: 34px;
   font-weight: 400;
+  color: var(--orange);
   margin: 0 36px;
   @media screen and (max-width: 768px) {
     font-size: 50px;
@@ -81,8 +81,8 @@ export const ChooseFoodH3 = styled.h3`
 
   @media screen and (max-width: 768px) {
     font-size: 14px;
-    align-self: center;
     margin-top: 10px;
+    align-self: center;
   }
 `;
 export const ChooseFoodIcons = styled.section`
@@ -90,11 +90,11 @@ export const ChooseFoodIcons = styled.section`
 `;
 export const FoodIcon = styled.div`
   font-size: 24px;
+  color: var(--lightgreen);
   margin-left: 14px;
   margin-top: 13px;
   transition: 0.5s all;
   position: relative;
-  color: var(--lightgreen);
 
   &:hover {
     cursor: pointer;
@@ -123,8 +123,8 @@ export const Strikethrough = styled.div`
   border-top: 1px solid white;
   border-radius: 3px;
   background: var(--grey2);
-  position: absolute;
   transform: rotate(-45deg);
+  position: absolute;
   top: 12px;
   right: -4px;
 `;
