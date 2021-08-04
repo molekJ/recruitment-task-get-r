@@ -7,15 +7,26 @@ export const ContainerBar = styled.div`
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    width: 768px;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
 `;
 
 export const WeekProgressContainer = styled.div`
   height: 100%;
   margin-left: 5px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 export const WeekProgressH3 = styled.h3`
   font-size: 7px;
@@ -27,7 +38,6 @@ export const WeekProgressH3 = styled.h3`
 
 export const WeekSlider = styled.div`
   height: 100%;
-  /* border: 1px solid black; */
   display: flex;
   align-items: center;
 `;
@@ -43,16 +53,22 @@ export const SliderBtn = styled.button`
   &:hover {
     cursor: pointer;
   }
+
+  @media screen and (max-width: 768px) {
+    width: 100px;
+  }
 `;
 export const SliderH2 = styled.h2`
   color: var(--orange);
   font-size: 34px;
   font-weight: 400;
   margin: 0 36px;
+  @media screen and (max-width: 768px) {
+    font-size: 50px;
+  }
 `;
 export const ChooseFoodContainer = styled.div`
   height: 100%;
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,6 +78,12 @@ export const ChooseFoodH3 = styled.h3`
   font-weight: 500;
   color: var(--darkgrey3);
   text-transform: uppercase;
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    align-self: center;
+    margin-top: 10px;
+  }
 `;
 export const ChooseFoodIcons = styled.section`
   display: flex;
@@ -85,6 +107,13 @@ export const FoodIcon = styled.div`
 
   &:nth-child(5) {
     margin-right: 2px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+    &:hover {
+      transform: none;
+    }
   }
 `;
 

@@ -7,6 +7,11 @@ export const NavContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    width: 768px;
+    justify-content: space-around;
+  }
 `;
 
 export const NavRoute = styled.ul`

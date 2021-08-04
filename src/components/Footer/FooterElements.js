@@ -14,6 +14,14 @@ export const FooterContainer = styled.div`
     font-size: 12px;
     margin-bottom: 20px;
   }
+  @media screen and (max-width: 768px) {
+    display: flex;
+    /* width: 100%; */
+    height: 100%;
+    max-width: 768px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 `;
 export const FooterBox = styled.div`
   width: 306px;
@@ -22,15 +30,40 @@ export const FooterBox = styled.div`
     border-right: 1px solid var(--darkgrey6);
     padding-right: 70px;
     padding-left: 5px;
+    @media screen and (max-width: 768px) {
+      height: 200px;
+      width: 300px;
+
+      padding: 20px;
+      margin: 0;
+      border: none;
+    }
   }
   :nth-of-type(2) {
     width: 366px;
     padding-left: 48px;
     padding-right: 80px;
+    @media screen and (max-width: 768px) {
+      height: 200px;
+      width: 300px;
+
+      padding: 20px;
+
+      margin: 0;
+      border: none;
+    }
   }
   :nth-of-type(3) {
     border-left: 1px solid var(--darkgrey6);
     padding-left: 40px;
+    @media screen and (max-width: 768px) {
+      height: 200px;
+      width: 300px;
+      padding: 20px;
+
+      margin: 0;
+      border: none;
+    }
   }
 `;
 

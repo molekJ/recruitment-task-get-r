@@ -18,6 +18,20 @@ export const Container = styled.div`
       color: var(--orange);
     }
   }
+  @media screen and (max-width: 768px) {
+    width: 768px;
+    height: 100px;
+    grid-template-columns: repeat(6, 109px) 114px;
+
+    grid-template-rows: 100px;
+    border: none;
+    div,
+    img,
+    h3,
+    p {
+      border: none;
+    }
+  }
 `;
 
 export const DayH3 = styled.h3`
@@ -54,6 +68,10 @@ export const CarbInfo = styled.p`
   align-items: center;
   background: var(--darkgrey2);
   border-right: 2px solid var(--grey2);
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 export const WokroutIcon = styled.div`
   display: flex;
