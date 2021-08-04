@@ -17,6 +17,12 @@ export const Container = styled.div`
     h3 {
       color: var(--orange);
     }
+    p {
+      color: black;
+    }
+    img {
+      opacity: 100%;
+    }
   }
   @media screen and (max-width: 768px) {
     height: 100px;
@@ -92,6 +98,6 @@ export const CheckIcon = styled.div``;
 
 export const PictureFood = styled.img`
   height: 54px;
-  opacity: 50%;
+  opacity: 40%;
   display: block;
 `;

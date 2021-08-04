@@ -1,4 +1,4 @@
-import milkShake from "../images/milkShake2.png";
+import milkShake from "../images/milkShake1.png";
 
 export default [
   [
