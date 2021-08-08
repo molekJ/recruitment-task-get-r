@@ -111,6 +111,7 @@ export const FoodIcon = styled.div`
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
+    transition: 0.1s all;
     &:hover {
       transform: none;
     }
