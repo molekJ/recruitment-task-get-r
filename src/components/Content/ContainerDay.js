@@ -16,7 +16,9 @@ export default function ContainerDay({ mealInfo, indexDay }) {
       {mealInfo.map((meal, index) => (
         <MealContainer key={index}>
           <p>{meal.meal}</p>
-          {meal.img != null && <PictureFood src={mealInfo[0].img} />}
+          {meal.img != null && (
+            <PictureFood src={mealInfo[0].img} alt="Food picture" />
+          )}
         </MealContainer>
       ))}
 
